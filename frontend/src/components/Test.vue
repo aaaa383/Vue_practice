@@ -1,0 +1,52 @@
+<template>
+  <div>
+    <h1>
+      Age & Gender Estimation by Voice Data
+    </h1>
+  </div>
+
+  <div class="container">
+    <button @click="MicClick()" class="btn">
+      Mic
+    </button>
+    <button @click="FileClick()" class="btn">
+      File
+    </button>
+  </div>
+  
+</template>
+
+<script>
+export default {
+  name: 'Test',
+  props: {
+    msg: String
+  },
+  methods: {
+    MicClick(){
+      console.log("Mic")
+    },
+    FileClick(){
+      console.log("File")
+    }
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+h3 {
+  margin: 40px 0 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+}
+</style>
