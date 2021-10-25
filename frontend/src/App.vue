@@ -2,19 +2,25 @@
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Minami"/>
   <Test />
+  <SKLearn/>
   <Result />
+  <Input />
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import Test from './components/Test.vue'
 import Result from './components/Result.vue'
+import SKLearn from './components/sklearn.vue'
+import Input from './components/Input.vue'
 
 export default {
   name: 'App',
   components: {
     Test,
-    Result
+    Result,
+    SKLearn,
+    Input
   }
 }
 </script>

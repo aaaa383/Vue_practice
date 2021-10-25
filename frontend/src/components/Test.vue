@@ -6,7 +6,7 @@
   </div>
 
   <div class="container">
-    <button @click="MicClick()" class="btn">
+    <button @click="MicClick()"  class="btn">
       Mic
     </button>
     <button @click="FileClick()" class="btn">
@@ -20,11 +20,11 @@
 export default {
   name: 'Test',
   props: {
-    msg: String
+    color: String
   },
   methods: {
     MicClick(){
-      console.log("Mic")
+      console.log()
     },
     FileClick(){
       console.log("File")
@@ -35,6 +35,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+
+
 h3 {
   margin: 40px 0 0;
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="result">
+  <div  class="test">
     <h1>
       Results go here!
     </h1>
@@ -10,13 +10,26 @@
 export default {
   name: 'Result',
   props: {
-    msg: String
+    color: String
   },
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+
+.test{
+  max-width: 230px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 40px;
+  border: 5px dashed red;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+
 h3 {
   margin: 40px 0 0;
 }
